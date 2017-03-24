@@ -11,5 +11,5 @@ if(max<c)
 {max=c;}
 else if(min>c)
 {min=c;}
-ptintf("max=%lf min=%lf\n",max,min);
+printf("max=%lf min=%lf\n",max,min);
 }
