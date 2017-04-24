@@ -1,0 +1,29 @@
+#include<stdio.h>
+main(void)
+{
+int i,k,max,a[5];
+printf("please input five number\n");
+for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+		printf("\n");
+		for(i=0;i<5;i++)
+		{
+			for(k=0;k<5-i;k++)
+			{
+			if(a[k]>a[k+1])
+					{
+						max=a[k];
+						a[k]=a[k+1];
+						a[k+1]=max;
+					}
+
+			}
+
+		}	
+for(k=0;k<5;k++)
+		{
+			printf("%d\n",a[k]);
+		}
+}
