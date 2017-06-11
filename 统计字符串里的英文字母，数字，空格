@@ -1,0 +1,26 @@
+#include<stdio.h>
+#define N 123                                           //使用宏定义
+int main()
+{
+char a[N];
+int i,m=0,n=0,b=0,c=0;
+printf("Input a string:");
+gets(a);                                              //注意gets()与getchar()区别
+
+for(i=0;a[i]!='\0';i++)                               //'\0'表述为到字符串末尾    
+{
+if(a[i]>='a'&&a[i]<='z'||a[i]>='A'&&a[i]<='Z')
+m++;
+else if(a[i]>='0'&&a[i]<='9')
+n++;
+else if(a[i]==' ')
+b++;
+else
+c++;
+}
+printf("英文字母:%d\n",m);
+printf("数字字符：%d\n",n);
+printf("空格：%d\n",b);
+printf("其他字符：%d\n",c);
+return 0;
+}
