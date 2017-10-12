@@ -43,7 +43,7 @@ return stu[m];
 
 void print(struct student stu)
 {
-printf("high score of stufent is\n");
+printf("high score of student is\n");
 printf("num:%d\tname:%s\nscore:%lf	%lf	%lf average:%lf\n",
 	   stu.num,stu.name,stu.score[0],stu.score[1],stu.score[2],stu.average);
 }
